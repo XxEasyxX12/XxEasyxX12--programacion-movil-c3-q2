@@ -140,9 +140,9 @@ El componente `ion-footer` permite a los usuarios interactuar con botones.
   </IonToolbar>
 </IonFooter>
 
-# Componentes Crud
+## Componentes Crud
 
-# Formulario
+### Formulario
 
 <div className="formulario">
     <div className="title caja">
@@ -182,7 +182,7 @@ El componente `ion-footer` permite a los usuarios interactuar con botones.
     </IonList>
 </div>
 
-# Botones Crear, Actualizar Y Eliminar
+### Botones Crear, Actualizar Y Eliminar
 
 <div className="botones">
     <IonButton color="primary">Crear</IonButton>
