@@ -23,7 +23,7 @@ Evidencias del funcionamiento de los componentes que se usuaron en el proyecto D
 ---
 
 ## Evidencia 3: Componentes individuales
-![Tercera Parte](https://github.com/XxEasyxX12/Curso-Html-y-Css/blob/main/tercera-crud.png?raw=true)
+![Tercera Parte](https://github.com/XxEasyxX12/Curso-Html-y-Css/blob/main/tercera.png?raw=true)
 
 ### Detalles
 - **Fecha:** [30/10/2024]
