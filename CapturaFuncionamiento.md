@@ -5,7 +5,7 @@ Evidencias del funcionamiento de los componentes que se usuaron en el proyecto D
 ---
 
 ## Evidencia 1: Componentes Individuales
-![Primera Parte](/src/componentes/imagenes/primera.png)
+![Primera Parte](https://github.com/XxEasyxX12/Curso-Html-y-Css/blob/main/primera.png?raw=true)
 
 ### Detalles
 - **Fecha:** [30/10/2024]
@@ -14,7 +14,7 @@ Evidencias del funcionamiento de los componentes que se usuaron en el proyecto D
 ---
 
 ## Evidencia 2: Componentes Individuales
-![Segunda Parte](/src/componentes/imagenes/segunda.png)
+![Segunda Parte](https://github.com/XxEasyxX12/Curso-Html-y-Css/blob/main/segunda.png?raw=true)
 
 ### Detalles
 - **Fecha:** [30/10/2024]
@@ -23,15 +23,15 @@ Evidencias del funcionamiento de los componentes que se usuaron en el proyecto D
 ---
 
 ## Evidencia 3: Componentes individuales
-![Tercera Parte](/src/componentes/imagenes/tercera.png)
+![Tercera Parte](https://github.com/XxEasyxX12/Curso-Html-y-Css/blob/main/tercera-crud.png?raw=true)
 
 ### Detalles
 - **Fecha:** [30/10/2024]
 - **Descripción adicional:** Tercera parte de los componentes individuales.
 
 ---
-## Evidencia 3: Componentes individuales
-![Tercera Parte] img
+## Evidencia 4: Componentes individuales
+![Tercera Parte](https://github.com/XxEasyxX12/Curso-Html-y-Css/blob/main/cuarta.png?raw=true)
 
 ### Detalles
 - **Fecha:** [30/10/2024]
@@ -43,21 +43,21 @@ En Esta parte se pueden obseravar en conjuntos todos los componentes idividuales
 ## EVIDENCIAS COMPONENTES GRUPALES CRUD
 
 ## Evidencia 1: Componentes Crud
-![Primera Parte](/src/componentes/imagenes/primera-crud.png)
+![Primera Parte](https://github.com/XxEasyxX12/Curso-Html-y-Css/blob/main/primera-crud.png?raw=true)
 
 ### Detalles
 - **Fecha:** [30/10/2024]
 - **Descripción adicional:** Primera parte de los componetesGrupales Crud.
 ---
 ## Evidencia 2: Componentes Crud
-![Primera Parte](/src/componentes/imagenes/segunda-crud.png)
+![Primera Parte](https://github.com/XxEasyxX12/Curso-Html-y-Css/blob/main/segunda-crud.png?raw=true)
 
 ### Detalles
 - **Fecha:** [30/10/2024]
 - **Descripción adicional:** Segunda parte de los componetes Grupales Crud.
 ---
 ## Evidencia 3: Componentes Crud
-![Primera Parte](/src/imagenes/tercera-crud.png)
+![Primera Parte](https://github.com/XxEasyxX12/Curso-Html-y-Css/blob/main/tercera-crud.png?raw=true)
 
 ### Detalles
 - **Fecha:** [30/10/2024]
