@@ -139,7 +139,6 @@ El componente `ion-footer` permite a los usuarios interactuar con botones.
     </div>
   </IonToolbar>
 </IonFooter>
-```
 
 # Componentes Crud
 
