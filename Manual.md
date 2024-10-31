@@ -1,9 +1,28 @@
 
-# Componentes Individuales
+# Proyecto Ionic React
 
-Este proyecto incluye una variedad de componentes de Ionic React para construir una interfaz de usuario funcional e interactiva. A continuación, se detallan los componentes usados en el proyecto.
+Componentes Que Se Utilizaron En El Proyecto Diaz_React.
 
-## Componentes
+## Tabla de Contenidos
+
+- [Componentes Individuales](#componentes-individuales)
+  - [Selección Múltiple](#selección-múltiple)
+  - [Inputs](#inputs)
+  - [Tarjetas de Medios](#tarjetas-de-medios)
+  - [Ventanas Emergentes](#ventanas-emergentes)
+  - [Barra de Búsqueda](#barra-de-búsqueda)
+  - [Botón](#botón)
+  - [Radio](#radio)
+  - [Tematización](#tematización)
+  - [Alternar Lista](#alternar-lista)
+  - [Footer](#footer)
+- [Componentes CRUD](#componentes-crud)
+  - [Formulario](#formulario)
+  - [Botones CRUD](#botones-crud)
+
+---
+
+## Componentes Individuales
 
 ### Selección Múltiple
 El componente `ion-select` permite a los usuarios seleccionar múltiples opciones de una lista.
@@ -41,7 +60,7 @@ El componente `ion-input` permite a los usuarios ingresar texto o números.
 </IonList>
 ```
 
-### Tarjetas De Medios
+### Tarjetas de Medios
 El componente `ion-card` permite a los usuarios interactuar con tarjetas de medios.
 ```jsx
 <IonCard>
@@ -54,7 +73,7 @@ El componente `ion-card` permite a los usuarios interactuar con tarjetas de medi
 </IonCard>
 ```
 
-### Ventana Emergentes En Línea
+### Ventanas Emergentes
 El componente `ion-modal` permite a los usuarios interactuar con ventanas emergentes en línea.
 ```jsx
 <IonButton id="click-trigger">Left-Click Me</IonButton>
@@ -63,7 +82,7 @@ El componente `ion-modal` permite a los usuarios interactuar con ventanas emerge
 </IonPopover>
 ```
 
-### Barra De Búsqueda
+### Barra de Búsqueda
 El componente `ion-searchbar` permite a los usuarios buscar contenido en una aplicación.
 ```jsx
 <IonSearchbar placeholder="Custom Placeholder"></IonSearchbar>
@@ -91,9 +110,8 @@ El componente `ion-radio` permite a los usuarios interactuar con botones de radi
 </IonRadioGroup>
 ```
 
-### Tematización 
-
-El componente `ion-toggle` permite a los usuarios interactuar con botones de radio.
+### Tematización
+El componente `ion-toggle` permite a los usuarios alternar entre temas.
 ```jsx
 <IonSegmentButton value="default">
   <IonLabel>Hombre</IonLabel>
@@ -103,9 +121,8 @@ El componente `ion-toggle` permite a los usuarios interactuar con botones de rad
 </IonSegmentButton>
 ```
 
-### Alternar Lista Toggle
-
-El componente `ion-toggle` permite a los usuarios interactuar con botones de radio.
+### Alternar Lista
+El componente `ion-toggle` permite a los usuarios interactuar con listas.
 ```jsx
 <IonList>
   <IonItem>
@@ -120,8 +137,8 @@ El componente `ion-toggle` permite a los usuarios interactuar con botones de rad
 </IonList>
 ```
 
-### Footer 
-El componente `ion-footer` permite a los usuarios interactuar con botones.
+### Footer
+El componente `ion-footer` permite a los usuarios interactuar con enlaces y redes sociales.
 ```jsx
 <IonFooter>
   <IonToolbar className="footer">
@@ -139,54 +156,61 @@ El componente `ion-footer` permite a los usuarios interactuar con botones.
     </div>
   </IonToolbar>
 </IonFooter>
+```
 
-## Componentes Crud
+## Componentes CRUD
 
 ### Formulario
-
+Un formulario para ingresar datos básicos del usuario.
+```jsx
 <div className="formulario">
-    <div className="title caja">
-        <h1>Completa El Formulario</h1>
-    </div>
+  <div className="title caja">
+    <h1>Completa El Formulario</h1>
+  </div>
+  <IonItem className='inputs-formu'>
+    <IonLabel position="floating">Nombre</IonLabel>
+    <IonInput value={name} onIonChange={(e) => setName(e.target.value)} />
+  </IonItem>
+  <IonItem className='inputs-formu'>
+    <IonLabel position="floating">Apellidos</IonLabel>
+    <IonInput value={surname} onIonChange={(e) => setSurname(e.target.value)} />
+  </IonItem>
+  <IonItem className='inputs-formu'>
+    <IonLabel position="floating">Correo</IonLabel>
+    <IonInput value={email} onIonChange={(e) => setEmail(e.target.value)} />
+  </IonItem>
+  <IonItem className='inputs-formu'>
+    <IonLabel position="floating">Contraseña</IonLabel>
+    <IonInput type="password" value={password} onIonChange={(e) => setPassword(e.target.value)} />
+  </IonItem>
+  <IonButton className='crear' onClick={handleSubmit}>
+    {editIndex !== null ? 'Actualizar' : 'Crear'}
+  </IonButton>
 
-    <IonItem className='inputs-formu'>
-        <IonLabel position="floating">Nombre</IonLabel>
-        <IonInput value={name} onIonChange={(e) => setName(e.target.value)} />
-    </IonItem>
-    <IonItem className='inputs-formu'>
-        <IonLabel position="floating">Apellidos</IonLabel>
-        <IonInput value={surname} onIonChange={(e) => setSurname(e.target.value)} />
-    </IonItem>
-    <IonItem className='inputs-formu'>
-        <IonLabel position="floating">Correo</IonLabel>
-        <IonInput value={email} onIonChange={(e) => setEmail(e.target.value)} />
-    </IonItem>
-    <IonItem className='inputs-formu'>
-        <IonLabel position="floating">Contraseña</IonLabel>
-        <IonInput type="password" value={password} onIonChange={(e) => setPassword(e.target.value)} />
-    </IonItem>
-    <IonButton className='crear' onClick={handleSubmit}>
-        {editIndex !== null ? 'Actualizar' : 'Crear'}
-    </IonButton>
-
-    <IonList className='lista-formu'>
-        {users.map((user, index) => (
-            <IonItem key={index}>
-                <IonLabel>
-                    {user.name} {user.surname} - {user.email}
-                </IonLabel>
-                <IonButton onClick={() => handleEdit(index)}>Editar</IonButton>
-                <IonButton color="danger" onClick={() => handleDelete(index)}>Eliminar</IonButton>
-            </IonItem>
-        ))}
-    </IonList>
+  <IonList className='lista-formu'>
+    {users.map((user, index) => (
+      <IonItem key={index}>
+        <IonLabel>
+          {user.name} {user.surname} - {user.email}
+        </IonLabel>
+        <IonButton onClick={() => handleEdit(index)}>Editar</IonButton>
+        <IonButton color="danger" onClick={() => handleDelete(index)}>Eliminar</IonButton>
+      </IonItem>
+    ))}
+  </IonList>
 </div>
+```
 
-### Botones Crear, Actualizar Y Eliminar
-
+### Botones CRUD
+Botones para realizar las operaciones de Crear, Actualizar y Eliminar.
+```jsx
 <div className="botones">
-    <IonButton color="primary">Crear</IonButton>
-    <IonButton color="secondary">Actualizar</IonButton>
-    <IonButton color="danger">Eliminar</IonButton>
+  <IonButton color="primary">Crear</IonButton>
+  <IonButton color="secondary">Actualizar</IonButton>
+  <IonButton color="danger">Eliminar</IonButton>
 </div>
+```
+
+---
+
 
